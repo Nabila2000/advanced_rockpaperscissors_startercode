@@ -19,11 +19,49 @@
 //****************** SERIOUSLY TEST USING console.log()!!! ******************
 
 //GLOBAL VARIABLES
+var choices = "";
+var computerChoice = "";
+var userChoice = "";
+var theWinner = "";
+console.log(choices);
+console.log(computerChoice);
+console.log(userChoice);
+console.log(theWinner);
 
 
-
-//FUNCTIONS
-
+//FUNCTIONs
+var moves = ["Rock", "Paper", "Scissors"];
+var randomWholeNum = Math.floor(Math.random()*moves.length);
+var computer move = (moves[randomWholeNum]);
+$("button").click(function()){
+        var inputusername = $("#usermove").val();
+(if computermove === "Rock" && usermove === "Rock"){ 
+       $("thewinner").append("No Wins");
+}
+(if computermove === "Rock" && usermove === "Paper"){ 
+       $("thewinner").append("User Wins");
+}
+(if computermove === "Rock" && usermove === "Scissors"){ 
+       $("thewinner").append("Computer Wins");
+}
+(if computermove === "Paper" && usermove === "Rock"){ 
+       $("thewinner").append("No Wins");
+}
+(if computermove === "Paper" && usermove === "Paper"){ 
+       $("thewinner").append("Computer Wins");
+}
+(if computermove === "Paper" && usermove === "Scissors"){ 
+       $("thewinner").append("No Wins");
+}
+(if computermove === "Scissors" && usermove === "Rock"){ 
+       $("thewinner").append("User Wins");
+}
+(if computermove === "Scissors" && usermove === "Paper"){ 
+       $("thewinner").append("Computer Wins");
+}
+(if computermove === "Scissors" && usermove === "Scissors"){ 
+       $("thewinner").append("No Wins");
+}
 
 
 // DOCUMENT READY FUNCTION
